@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarot 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">🔮 Tarot Reading</h1>
+
+<div class="deck">
+
+  <!-- CARD 1 -->
+  <div class="card">
+    <div class="inner">
+      
+      <div class="front">
+        <span>LEFT</span>
+        <button>Flip</button>
+      </div>
+
+      <div class="back">
+        <h2>Strength</h2>
+        <p>You overcame challenges and became stronger.</p>
+        <button>Flip back</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card">
+    <div class="inner">
+
+      <div class="front">
+        <span>MIDDLE</span>
+        <button>Flip</button>
+      </div>
+
+      <div class="back">
+        <h2>The Star</h2>
+        <p>Hope, healing and inspiration guide you.</p>
+        <button>Flip back</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card">
+    <div class="inner">
+
+      <div class="front">
+        <span>RIGHT</span>
+        <button>Flip</button>
+      </div>
+
+      <div class="back">
+        <h2>Wheel of Fortune</h2>
+        <p>Change is coming. Cycles are turning.</p>
+        <button>Flip back</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
+</script>
+
+</body>
+</html>
